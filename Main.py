@@ -50,22 +50,6 @@ def scene_3():
         return "scene_3"
 
 
-def scene_4():
-    print("\n=== Scene 4: The Secret Passage ===")
-    print("You find yourself in a narrow tunnel, its walls carved with strange symbols that glow faintly.")
-    print("At the end of the passage, you see a large wooden chest covered in cobwebs.")
-
-    choice = input("\nDo you 'open' the chest or 'turn back'? ").strip().lower()
-
-    if choice == "open":
-        print("\nYou lift the lid and find an ancient relic pulsing with energy. You have discovered a powerful artifact!")
-        return "quit"
-    elif choice == "turn back":
-        print("\nYou decide it's too risky and retrace your steps, ending up in the hallway again.")
-        return "scene_1"
-    else:
-        print("\nThe passage remains still, waiting for your decision. Try again.")
-        return "scene_4"
 
 
 def start_game():
