@@ -13,3 +13,20 @@ def scene_1():
         print("\nThat doesn't seem like an option. Try again.")
         return "scene_1"
 
+
+def scene_2():
+    print("\n=== Scene 2: The Haunted Library ===")
+    print("You step into an ancient library. Dusty bookshelves tower over you, their contents whispering as if alive.")
+    print("A ghostly figure emerges from the shadows, its hollow eyes staring directly at you.")
+
+    choice = input("\nDo you 'run' in fear or 'talk' to the spirit? ").strip().lower()
+
+    if choice == "run":
+        print("\nYou turn and sprint, but a bookshelf collapses, forcing you through a hidden door!")
+        return "scene_4"
+    elif choice == "talk":
+        print("\nThe ghost tells you of a hidden passage behind a bookshelf. You push it open and step through.")
+        return "scene_5"
+    else:
+        print("\nThe ghost waits, its gaze unchanging. Try again.")
+        return "scene_2"
