@@ -49,7 +49,40 @@ def scene_3():
         print("\nThe eerie silence continues as you hesitate. Try again.")
         return "scene_3"
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 5b1d1d6 (Revert "Remove 5")
+>>>>>>> parent of efa2d01 (Final Commit)
+=======
+
+def scene_4():
+    print("\n=== Scene 4: The Secret Passage ===")
+    print("You find yourself in a narrow tunnel, its walls carved with strange symbols that glow faintly.")
+    print("At the end of the passage, you see a large wooden chest covered in cobwebs.")
+
+    choice = input("\nDo you 'open' the chest or 'turn back'? ").strip().lower()
+
+    if choice == "open":
+        print("\nYou lift the lid and find an ancient relic pulsing with energy. You have discovered a powerful artifact!")
+        return "quit"
+    elif choice == "turn back":
+        print("\nYou decide it's too risky and retrace your steps, ending up in the hallway again.")
+        return "scene_1"
+    else:
+        print("\nThe passage remains still, waiting for your decision. Try again.")
+        return "scene_4"
+<<<<<<< HEAD
+>>>>>>> parent of 5b1d1d6 (Revert "Remove 5")
+=======
+>>>>>>> parent of 5b1d1d6 (Revert "Remove 5")
+=======
+
+>>>>>>> parent of 5f4809d (Remove)
 
 
 def start_game():
@@ -73,4 +106,16 @@ def start_game():
             print("\nUnknown scene. Exiting the game.")
             break
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 start_game()
+=======
+start_game()
+>>>>>>> parent of 99774d3 (Remove 4)
+<<<<<<< HEAD
+>>>>>>> parent of 5b1d1d6 (Revert "Remove 5")
+=======
+>>>>>>> parent of 5b1d1d6 (Revert "Remove 5")
+=======
+start_game()
+>>>>>>> parent of 5f4809d (Remove)
