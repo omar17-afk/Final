@@ -68,24 +68,6 @@ def scene_4():
         return "scene_4"
 
 
-def scene_5():
-    print("\n=== Scene 5: The Underground Chamber ===")
-    print("You land in a cavernous underground chamber, its walls lined with glowing blue crystals.")
-    print("A massive stone door stands before you, with an inscription: 'The past holds the key to the future.'")
-
-    choice = input("\nDo you 'explore' the chamber or 'climb' back up? ").strip().lower()
-
-    if choice == "explore":
-        print("\nYou step forward and touch the door. It rumbles open, revealing a hidden realm beyond. You have unlocked a great mystery!")
-        return "quit"
-    elif choice == "climb":
-        print("\nYou grab onto an old rope ladder and ascend, returning to the hallway.")
-        return "scene_1"
-    else:
-        print("\nThe crystals hum softly as you hesitate. Try again.")
-        return "scene_5"
-
-
 def start_game():
     current_scene = "scene_1"
 
@@ -102,6 +84,9 @@ def start_game():
             current_scene = scene_5()
         elif current_scene == "quit":
             print("\nThank you for playing! See you next time.")
+            break
+        else:
+            print("\nUnknown scene. Exiting the game.")
             break
 
 start_game()
