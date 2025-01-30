@@ -49,3 +49,62 @@ def scene_3():
         print("\nThe eerie silence continues as you hesitate. Try again.")
         return "scene_3"
 
+
+def scene_4():
+    print("\n=== Scene 4: The Secret Passage ===")
+    print("You find yourself in a narrow tunnel, its walls carved with strange symbols that glow faintly.")
+    print("At the end of the passage, you see a large wooden chest covered in cobwebs.")
+
+    choice = input("\nDo you 'open' the chest or 'turn back'? ").strip().lower()
+
+    if choice == "open":
+        print("\nYou lift the lid and find an ancient relic pulsing with energy. You have discovered a powerful artifact!")
+        return "quit"
+    elif choice == "turn back":
+        print("\nYou decide it's too risky and retrace your steps, ending up in the hallway again.")
+        return "scene_1"
+    else:
+        print("\nThe passage remains still, waiting for your decision. Try again.")
+        return "scene_4"
+
+
+def scene_5():
+    print("\n=== Scene 5: The Underground Chamber ===")
+    print("You land in a cavernous underground chamber, its walls lined with glowing blue crystals.")
+    print("A massive stone door stands before you, with an inscription: 'The past holds the key to the future.'")
+
+    choice = input("\nDo you 'explore' the chamber or 'climb' back up? ").strip().lower()
+
+    if choice == "explore":
+        print("\nYou step forward and touch the door. It rumbles open, revealing a hidden realm beyond. You have unlocked a great mystery!")
+        return "quit"
+    elif choice == "climb":
+        print("\nYou grab onto an old rope ladder and ascend, returning to the hallway.")
+        return "scene_1"
+    else:
+        print("\nThe crystals hum softly as you hesitate. Try again.")
+        return "scene_5"
+
+
+def start_game():
+    current_scene = "scene_1"
+
+    while True:
+        if current_scene == "scene_1":
+            current_scene = scene_1()
+        elif current_scene == "scene_2":
+            current_scene = scene_2()
+        elif current_scene == "scene_3":
+            current_scene = scene_3()
+        elif current_scene == "scene_4":
+            current_scene = scene_4()
+        elif current_scene == "scene_5":
+            current_scene = scene_5()
+        elif current_scene == "quit":
+            print("\nThank you for playing! See you next time.")
+            break
+        else:
+            print("\nUnknown scene. Exiting the game.")
+            break
+
+start_game()
