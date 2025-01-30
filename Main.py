@@ -30,3 +30,22 @@ def scene_2():
     else:
         print("\nThe ghost waits, its gaze unchanging. Try again.")
         return "scene_2"
+
+
+def scene_3():
+    print("\n=== Scene 3: The Abandoned Dining Hall ===")
+    print("You enter a grand dining hall. The long table is covered in dust, with untouched plates of rotting food still in place.")
+    print("Suddenly, you hear the sound of footsteps from the kitchen.")
+
+    choice = input("\nDo you 'investigate' the kitchen or 'hide' under the table? ").strip().lower()
+
+    if choice == "investigate":
+        print("\nYou cautiously step into the kitchen, only to find an old, creaky door leading to an underground chamber.")
+        return "scene_4"
+    elif choice == "hide":
+        print("\nAs you crouch under the table, your hand touches a hidden latch. A trapdoor opens beneath you!")
+        return "scene_5"
+    else:
+        print("\nThe eerie silence continues as you hesitate. Try again.")
+        return "scene_3"
+
