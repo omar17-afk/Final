@@ -73,16 +73,4 @@ def start_game():
             print("\nUnknown scene. Exiting the game.")
             break
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 start_game()
-=======
-start_game()
->>>>>>> parent of 99774d3 (Remove 4)
-<<<<<<< HEAD
->>>>>>> parent of 5b1d1d6 (Revert "Remove 5")
-=======
->>>>>>> parent of 5b1d1d6 (Revert "Remove 5")
-=======
-start_game()
->>>>>>> parent of 5f4809d (Remove)
