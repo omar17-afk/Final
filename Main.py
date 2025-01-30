@@ -103,8 +103,5 @@ def start_game():
         elif current_scene == "quit":
             print("\nThank you for playing! See you next time.")
             break
-        else:
-            print("\nUnknown scene. Exiting the game.")
-            break
 
 start_game()
